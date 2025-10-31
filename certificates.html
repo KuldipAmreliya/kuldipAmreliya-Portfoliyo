@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificates & Achievements - Kuldip Amreliya</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* Mobile Responsive Styles */
+        @media (max-width: 768px) {
+            .certificate-grid {
+                grid-template-columns: 1fr !important;
+                gap: 16px !important;
+                padding: 0 10px !important;
+            }
+            
+            .certificate-card {
+                margin-bottom: 0 !important;
+            }
+            
+            .certificate-image {
+                height: 140px !important;
+            }
+            
+            .certificate-content {
+                padding: 16px !important;
+            }
+            
+            h2 {
+                font-size: 28px !important;
+                margin-bottom: 30px !important;
+            }
+            
+            h3 {
+                font-size: 15px !important;
+            }
+            
+            section {
+                padding-left: 5% !important;
+                padding-right: 5% !important;
+            }
+            
+            .achievements {
+                padding: 30px 5% !important;
+            }
+            
+            .achievement-list {
+                font-size: 14px !important;
+            }
+        }
+        
+        @media (min-width: 769px) and (max-width: 1024px) {
+            .certificate-grid {
+                grid-template-columns: repeat(2, 1fr) !important;
+                gap: 20px !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Stars Background -->
+    <div class="stars" id="stars"></div>
+    
+    <header class="header">
+        <div class="header-content">
+            <div class="logo-container">
+                <div class="logo">AK</div>
+                <div class="name-title">
+                    <!-- <h1 class="header-name">Kuldip Amreliya</h1>
+                    <span class="title">Java Developer</span> -->
+                </div>
+            </div>
+            <nav class="navbar">
+                <ul class="nav-links">
+                    <li><a href="index.html#home">Home</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#skills">Skills</a></li>
+                    <li><a href="index.html#education">Education</a></li>
+                    <li><a href="index.html#experience">Experience</a></li>
+                    <li><a href="index.html#projects">Projects</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                    <li><a href="#certificates" class="active">Certificates</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main style="position: relative; z-index: 1;">
+        <section id="certificates" class="certificates" style="opacity: 1; transform: translateY(0); padding: 80px 5% 40px;">
+            <h2 style="text-align: center; margin-bottom: 40px; font-size: 32px;">Certificates</h2>
+
+            <div class="certificate-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 24px; max-width: 1200px; margin: 0 auto;">
+                <!-- ========== JAVA CERTIFICATES ========== -->
+                  <!-- Java Basics  -->
+                <div class="certificate-card" style="background: rgba(255, 255, 255, 0.05); border-radius: 12px; overflow: hidden; transition: all 0.3s ease; cursor: pointer; position: relative;" onclick="openCertificate('https://www.hackerrank.com/certificates/iframe/7cf94af087e5')" onmouseover="this.style.transform='translateY(-8px)'; this.style.boxShadow='0 15px 35px rgba(0,212,255,0.4)'; this.style.border='1px solid rgba(0,212,255,0.3)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none'; this.style.border='1px solid transparent'">
+                    <div class="certificate-image" style="height: 160px; overflow: hidden; position: relative;">
+                        <img src="media/java basics.png" alt="Problem Solving (Intermediate)" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease;">
+                        <div class="certificate-overlay" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.6); display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.3s ease;">
+                            <i class="fas fa-external-link-alt" style="color: #00d4ff; font-size: 24px;"></i>
+                        </div>
+                    </div>
+                    <div class="certificate-content" style="padding: 20px;">
+                        <h3 style="margin: 0 0 8px 0; font-size: 16px; font-weight: 600; color: #fff;">Java (Basic)</h3>
+                        <p class="issuer" style="margin: 0; color: #888; font-size: 14px;">HackerRank • Oct 2025</p>
+                        <div style="margin-top: 8px; color: #00d4ff; font-size: 12px; display: flex; align-items: center;">
+                            <i class="fas fa-external-link-alt" style="margin-right: 4px;"></i>
+                            Click to view certificate
+                        </div>
+                    </div>
+                </div>
+                <!-- Oracle Java Foundation -->
+                <div class="certificate-card" style="background: rgba(255, 255, 255, 0.05); border-radius: 12px; overflow: hidden; transition: all 0.3s ease; cursor: pointer; position: relative;" onclick="openCertificate('https://drive.google.com/file/d/1TmQcHekvSXjprvs7MM_UX98xrXjyfAtm/view?usp=sharing')" onmouseover="this.style.transform='translateY(-8px)'; this.style.boxShadow='0 15px 35px rgba(0,212,255,0.4)'; this.style.border='1px solid rgba(0,212,255,0.3)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none'; this.style.border='1px solid transparent'">
+                    <div class="certificate-image" style="height: 160px; overflow: hidden; position: relative;">
+                        <img src="media/oracle java.png" alt="Oracle Java Foundation" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease;">
+                        <div class="certificate-overlay" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.6); display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.3s ease;">
+                            <i class="fas fa-external-link-alt" style="color: #00d4ff; font-size: 24px;"></i>
+                        </div>
+                    </div>
+                    <div class="certificate-content" style="padding: 20px;">
+                        <h3 style="margin: 0 0 8px 0; font-size: 16px; font-weight: 600; color: #fff;">Oracle Java Foundation</h3>
+                        <p class="issuer" style="margin: 0; color: #888; font-size: 14px;">Oracle • Aug 2024</p>
+                        <div style="margin-top: 8px; color: #00d4ff; font-size: 12px; display: flex; align-items: center;">
+                            <i class="fas fa-external-link-alt" style="margin-right: 4px;"></i>
+                            Click to view certificate
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Introduction to Java on Azure -->
+                <div class="certificate-card" style="background: rgba(255, 255, 255, 0.05); border-radius: 12px; overflow: hidden; transition: all 0.3s ease; cursor: pointer; position: relative;" onclick="openCertificate('https://learn.microsoft.com/en-us/users/kuldipamreliya-4044/achievements/9fd9mehu?ref=https%3A%2F%2Fwww.linkedin.com%2F')" onmouseover="this.style.transform='translateY(-8px)'; this.style.boxShadow='0 15px 35px rgba(0,212,255,0.4)'; this.style.border='1px solid rgba(0,212,255,0.3)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none'; this.style.border='1px solid transparent'">
+                    <div class="certificate-image" style="height: 160px; overflow: hidden; position: relative;">
+                        <img src="media/Java Azure.png" alt="Introduction to Java on Azure" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease;">
+                        <div class="certificate-overlay" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.6); display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.3s ease;">
+                            <i class="fas fa-external-link-alt" style="color: #00d4ff; font-size: 24px;"></i>
+                        </div>
+                    </div>
+                    <div class="certificate-content" style="padding: 20px;">
+                        <h3 style="margin: 0 0 8px 0; font-size: 16px; font-weight: 600; color: #fff;">Introduction to Java on Azure</h3>
+                        <p class="issuer" style="margin: 0; color: #888; font-size: 14px;">Microsoft • Jul 2024</p>
+                        <div style="margin-top: 8px; color: #00d4ff; font-size: 12px; display: flex; align-items: center;">
+                            <i class="fas fa-external-link-alt" style="margin-right: 4px;"></i>
+                            Click to view certificate
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Java Online Test & Quiz -->
+                <div class="certificate-card" style="background: rgba(255, 255, 255, 0.05); border-radius: 12px; overflow: hidden; transition: all 0.3s ease; cursor: pointer; position: relative;" onclick="openCertificate('https://www.codechef.com/users/kuldipamreliya')" onmouseover="this.style.transform='translateY(-8px)'; this.style.boxShadow='0 15px 35px rgba(0,212,255,0.4)'; this.style.border='1px solid rgba(0,212,255,0.3)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none'; this.style.border='1px solid transparent'">
+                    <div class="certificate-image" style="height: 160px; overflow: hidden; position: relative;">
+                        <img src="media/codechef skill test.png" alt="Java Test & Quiz" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease;">
+                        <div class="certificate-overlay" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.6); display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.3s ease;">
+                            <i class="fas fa-external-link-alt" style="color: #00d4ff; font-size: 24px;"></i>
+                        </div>
+                    </div>
+                    <div class="certificate-content" style="padding: 20px;">
+                        <h3 style="margin: 0 0 8px 0; font-size: 16px; font-weight: 600; color: #fff;">Java Online Test & Quiz</h3>
+                        <p class="issuer" style="margin: 0; color: #888; font-size: 14px;">CodeChef • Aug 2025</p>
+                        <div style="margin-top: 8px; color: #00d4ff; font-size: 12px; display: flex; align-items: center;">
+                            <i class="fas fa-external-link-alt" style="margin-right: 4px;"></i>
+                            Click to view certificate
+                        </div>
+                    </div>
+                </div>
+
+                
+                
+
+                <!-- Basics of Java Guided Path -->
+                <div class="certificate-card" style="background: rgba(255, 255, 255, 0.05); border-radius: 12px; overflow: hidden; transition: all 0.3s ease; cursor: pointer; position: relative;" onclick="openCertificate('https://files.codingninjas.in/certi_image6180232e8ec1bd0bebc2a4bf0f993c79411a23.jpg')" onmouseover="this.style.transform='translateY(-8px)'; this.style.boxShadow='0 15px 35px rgba(0,212,255,0.4)'; this.style.border='1px solid rgba(0,212,255,0.3)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none'; this.style.border='1px solid transparent'">
+                    <div class="certificate-image" style="height: 160px; overflow: hidden; position: relative;">
+                        <img src="media/java guided path.jpg" alt="Basics of Java Guided Path" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease;">
+                        <div class="certificate-overlay" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.6); display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.3s ease;">
+                            <i class="fas fa-external-link-alt" style="color: #00d4ff; font-size: 24px;"></i>
+                        </div>
+                    </div>
+                    <div class="certificate-content" style="padding: 20px;">
+                        <h3 style="margin: 0 0 8px 0; font-size: 16px; font-weight: 600; color: #fff;">Basics of Java Guided Path</h3>
+                        <p class="issuer" style="margin: 0; color: #888; font-size: 14px;">Coding Ninjas • Jul 2024</p>
+                        <div style="margin-top: 8px; color: #00d4ff; font-size: 12px; display: flex; align-items: center;">
+                            <i class="fas fa-external-link-alt" style="margin-right: 4px;"></i>
+                            Click to view certificate
+                        </div>
+                    </div>
+                </div>
+                
+
+                <!-- Internship Certificate in Java -->
+                <div class="certificate-card" style="background: rgba(255, 255, 255, 0.05); border-radius: 12px; overflow: hidden; transition: all 0.3s ease; cursor: pointer; position: relative;" onclick="openCertificate('https://drive.google.com/file/d/1wMVqUFSEplFzKbedL-iaea5mBBJ5j4ze/view?usp=sharing')" onmouseover="this.style.transform='translateY(-8px)'; this.style.boxShadow='0 15px 35px rgba(0,212,255,0.4)'; this.style.border='1px solid rgba(0,212,255,0.3)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none'; this.style.border='1px solid transparent'">
+                    <div class="certificate-image" style="height: 160px; overflow: hidden; position: relative;">
+                        <img src="media/saiket systems.jpg" alt="Internship Certificate in Java" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease;">
+                        <div class="certificate-overlay" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.6); display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.3s ease;">
+                            <i class="fas fa-external-link-alt" style="color: #00d4ff; font-size: 24px;"></i>
+                        </div>
+                    </div>
+                    <div class="certificate-content" style="padding: 20px;">
+                        <h3 style="margin: 0 0 8px 0; font-size: 16px; font-weight: 600; color: #fff;">Internship Certificate in Java</h3>
+                        <p class="issuer" style="margin: 0; color: #888; font-size: 14px;">SaiKet Systems • Jun–Jul 2024</p>
+                        <div style="margin-top: 8px; color: #00d4ff; font-size: 12px; display: flex; align-items: center;">
+                            <i class="fas fa-external-link-alt" style="margin-right: 4px;"></i>
+                            Click to view certificate
+                        </div>
+                    </div>
+                </div>
+
+                <div class="certificate-card" style="background: rgba(255, 255, 255, 0.05); border-radius: 12px; overflow: hidden; transition: all 0.3s ease; cursor: pointer; position: relative;" onclick="openCertificate('https://drive.google.com/file/d/1s2d9TvEk2AIrAlW5VzaehOs8es2PC4sx/view?usp=sharing')" onmouseover="this.style.transform='translateY(-8px)'; this.style.boxShadow='0 15px 35px rgba(0,212,255,0.4)'; this.style.border='1px solid rgba(0,212,255,0.3)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none'; this.style.border='1px solid transparent'">
+                    <div class="certificate-image" style="height: 160px; overflow: hidden; position: relative;">
+                        <img src="media/Kuldip Edunet Certificate_page-0001.jpg" alt="Internship Certificate in Java" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease;">
+                        <div class="certificate-overlay" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.6); display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.3s ease;">
+                            <i class="fas fa-external-link-alt" style="color: #00d4ff; font-size: 24px;"></i>
+                        </div>
+                    </div>
+                    <div class="certificate-content" style="padding: 20px;">
+                        <h3 style="margin: 0 0 8px 0; font-size: 16px; font-weight: 600; color: #fff;">Internship Certificate AI & Cloud</h3>
+                        <p class="issuer" style="margin: 0; color: #888; font-size: 14px;">SkillsBuild & IBM Cloud Platform in Emerging Technologies (Al & Cloud) Intern • July–Nov 2024</p>
+                        <div style="margin-top: 8px; color: #00d4ff; font-size: 12px; display: flex; align-items: center;">
+                            <i class="fas fa-external-link-alt" style="margin-right: 4px;"></i>
+                            Click to view certificate
+                        </div>
+                    </div>
+                </div>
+                
+
+                <!-- ========== PROBLEM SOLVING CERTIFICATES ========== -->
+                <!-- Problem Solving (Intermediate) -->
+                <div class="certificate-card" style="background: rgba(255, 255, 255, 0.05); border-radius: 12px; overflow: hidden; transition: all 0.3s ease; cursor: pointer; position: relative;" onclick="openCertificate('https://www.hackerrank.com/certificates/iframe/63fd24df4339')" onmouseover="this.style.transform='translateY(-8px)'; this.style.boxShadow='0 15px 35px rgba(0,212,255,0.4)'; this.style.border='1px solid rgba(0,212,255,0.3)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none'; this.style.border='1px solid transparent'">
+                    <div class="certificate-image" style="height: 160px; overflow: hidden; position: relative;">
+                        <img src="media/ps intermediate.png" alt="Problem Solving (Intermediate)" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease;">
+                        <div class="certificate-overlay" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.6); display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.3s ease;">
+                            <i class="fas fa-external-link-alt" style="color: #00d4ff; font-size: 24px;"></i>
+                        </div>
+                    </div>
+                    <div class="certificate-content" style="padding: 20px;">
+                        <h3 style="margin: 0 0 8px 0; font-size: 16px; font-weight: 600; color: #fff;">Problem Solving (Intermediate)</h3>
+                        <p class="issuer" style="margin: 0; color: #888; font-size: 14px;">HackerRank • Jul 2024</p>
+                        <div style="margin-top: 8px; color: #00d4ff; font-size: 12px; display: flex; align-items: center;">
+                            <i class="fas fa-external-link-alt" style="margin-right: 4px;"></i>
+                            Click to view certificate
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Problem Solving (Basics) -->
+                <div class="certificate-card" style="background: rgba(255, 255, 255, 0.05); border-radius: 12px; overflow: hidden; transition: all 0.3s ease; cursor: pointer; position: relative;" onclick="openCertificate('https://www.hackerrank.com/certificates/iframe/e1583c131c29')" onmouseover="this.style.transform='translateY(-8px)'; this.style.boxShadow='0 15px 35px rgba(0,212,255,0.4)'; this.style.border='1px solid rgba(0,212,255,0.3)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none'; this.style.border='1px solid transparent'">
+                    <div class="certificate-image" style="height: 160px; overflow: hidden; position: relative;">
+                        <img src="media/ps barics.png" alt="Problem Solving (Basics)" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease;">
+                        <div class="certificate-overlay" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.6); display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.3s ease;">
+                            <i class="fas fa-external-link-alt" style="color: #00d4ff; font-size: 24px;"></i>
+                        </div>
+                    </div>
+                    <div class="certificate-content" style="padding: 20px;">
+                        <h3 style="margin: 0 0 8px 0; font-size: 16px; font-weight: 600; color: #fff;">Problem Solving (Basics)</h3>
+                        <p class="issuer" style="margin: 0; color: #888; font-size: 14px;">HackerRank • Jul 2024</p>
+                        <div style="margin-top: 8px; color: #00d4ff; font-size: 12px; display: flex; align-items: center;">
+                            <i class="fas fa-external-link-alt" style="margin-right: 4px;"></i>
+                            Click to view certificate
+                        </div>
+                    </div>
+                </div>
+                
+
+                <!-- ========== HACKERRANK CERTIFICATES ========== -->
+                <!-- SQL (Intermediate) -->
+                <!-- All certificates converted to main section style -->
+
+<!-- SQL (Intermediate) -->
+<div class="certificate-card" style="background: rgba(255, 255, 255, 0.05); border-radius: 12px; overflow: hidden; transition: all 0.3s ease; cursor: pointer; position: relative;" onclick="openCertificate('https://www.hackerrank.com/certificates/iframe/92e61be3bc1a')" onmouseover="this.style.transform='translateY(-8px)'; this.style.boxShadow='0 15px 35px rgba(0,212,255,0.4)'; this.style.border='1px solid rgba(0,212,255,0.3)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none'; this.style.border='1px solid transparent'">
+    <div class="certificate-image" style="height: 160px; overflow: hidden; position: relative;">
+        <img src="media/sql basics.png" alt="SQL Intermediate" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease;">
+        <div class="certificate-overlay" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.6); display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.3s ease;">
+            <i class="fas fa-external-link-alt" style="color: #00d4ff; font-size: 24px;"></i>
+        </div>
+    </div>
+    <div class="certificate-content" style="padding: 20px;">
+        <h3 style="margin: 0 0 8px 0; font-size: 16px; font-weight: 600; color: #fff;">SQL (Intermediate)</h3>
+        <p class="issuer" style="margin: 0; color: #888; font-size: 14px;">HackerRank • Jul 2024</p>
+        <div style="margin-top: 8px; color: #00d4ff; font-size: 12px; display: flex; align-items: center;">
+            <i class="fas fa-external-link-alt" style="margin-right: 4px;"></i>
+            Click to view certificate
+        </div>
+    </div>
+</div>
+
+<!-- SQL (Basics) -->
+<!-- The rest of certificates will follow the same structure... -->
+
+<!-- SQL (Basics) -->
+<div class="certificate-card" style="background: rgba(255, 255, 255, 0.05); border-radius: 12px; overflow: hidden; transition: all 0.3s ease; cursor: pointer; position: relative;" onclick="openCertificate('https://www.hackerrank.com/certificates/iframe/1dc8731bca0c')" onmouseover="this.style.transform='translateY(-8px)'; this.style.boxShadow='0 15px 35px rgba(0,212,255,0.4)'; this.style.border='1px solid rgba(0,212,255,0.3)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none'; this.style.border='1px solid transparent'">
+    <div class="certificate-image" style="height: 160px; overflow: hidden; position: relative;">
+        <img src="media/sql b.png" alt="SQL Basics" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease;">
+        <div class="certificate-overlay" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.6); display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.3s ease;">
+            <i class="fas fa-external-link-alt" style="color: #00d4ff; font-size: 24px;"></i>
+        </div>
+    </div>
+    <div class="certificate-content" style="padding: 20px;">
+        <h3 style="margin: 0 0 8px 0; font-size: 16px; font-weight: 600; color: #fff;">SQL (Basics)</h3>
+        <p class="issuer" style="margin: 0; color: #888; font-size: 14px;">HackerRank • Jul 2024</p>
+        <div style="margin-top: 8px; color: #00d4ff; font-size: 12px; display: flex; align-items: center;">
+            <i class="fas fa-external-link-alt" style="margin-right: 4px;"></i>
+            Click to view certificate
+        </div>
+    </div>
+</div>
+
+<!-- CSS (Basic) -->
+<div class="certificate-card" style="background: rgba(255, 255, 255, 0.05); border-radius: 12px; overflow: hidden; transition: all 0.3s ease; cursor: pointer; position: relative;" onclick="openCertificate('https://www.hackerrank.com/certificates/iframe/39f86fad0f89')" onmouseover="this.style.transform='translateY(-8px)'; this.style.boxShadow='0 15px 35px rgba(0,212,255,0.4)'; this.style.border='1px solid rgba(0,212,255,0.3)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none'; this.style.border='1px solid transparent'">
+    <div class="certificate-image" style="height: 160px; overflow: hidden; position: relative;">
+        <img src="media/css basics.png" alt="CSS Basic" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease;">
+        <div class="certificate-overlay" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.6); display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.3s ease;">
+            <i class="fas fa-external-link-alt" style="color: #00d4ff; font-size: 24px;"></i>
+        </div>
+    </div>
+    <div class="certificate-content" style="padding: 20px;">
+        <h3 style="margin: 0 0 8px 0; font-size: 16px; font-weight: 600; color: #fff;">CSS (Basic)</h3>
+        <p class="issuer" style="margin: 0; color: #888; font-size: 14px;">HackerRank • Jul 2024</p>
+        <div style="margin-top: 8px; color: #00d4ff; font-size: 12px; display: flex; align-items: center;">
+            <i class="fas fa-external-link-alt" style="margin-right: 4px;"></i>
+            Click to view certificate
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Get data in Power BI -->
+<div class="certificate-card" style="background: rgba(255, 255, 255, 0.05); border-radius: 12px; overflow: hidden; transition: all 0.3s ease; cursor: pointer; position: relative;" onclick="openCertificate('https://learn.microsoft.com/en-us/users/kuldipamreliya-4044/achievements/f26hqwpx?ref=https%3A%2F%2Fwww.linkedin.com%2F')" onmouseover="this.style.transform='translateY(-8px)'; this.style.boxShadow='0 15px 35px rgba(0,212,255,0.4)'; this.style.border='1px solid rgba(0,212,255,0.3)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none'; this.style.border='1px solid transparent'">
+    <div class="certificate-image" style="height: 160px; overflow: hidden; position: relative;">
+        <img src="media/get data power bi.png" alt="Get data in Power BI" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease;">
+        <div class="certificate-overlay" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.6); display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.3s ease;">
+            <i class="fas fa-external-link-alt" style="color: #00d4ff; font-size: 24px;"></i>
+        </div>
+    </div>
+    <div class="certificate-content" style="padding: 20px;">
+        <h3 style="margin: 0 0 8px 0; font-size: 16px; font-weight: 600; color: #fff;">Get data in Power BI</h3>
+        <p class="issuer" style="margin: 0; color: #888; font-size: 14px;">Microsoft • Jul 2024</p>
+        <div style="margin-top: 8px; color: #00d4ff; font-size: 12px; display: flex; align-items: center;">
+            <i class="fas fa-external-link-alt" style="margin-right: 4px;"></i>Click to view certificate
+        </div>
+    </div>
+</div>
+
+
+<!-- Technology Job Simulation -->
+<div class="certificate-card" style="background: rgba(255, 255, 255, 0.05); border-radius: 12px; overflow: hidden; transition: all 0.3s ease; cursor: pointer; position: relative;" onclick="openCertificate('https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/9PBTqmSxAf6zZTseP/udmxiyHeqYQLkTPvf_9PBTqmSxAf6zZTseP_gGBzn53AGWdEj7NxE_1750769167046_completion_certificate.pdf')" onmouseover="this.style.transform='translateY(-8px)'; this.style.boxShadow='0 15px 35px rgba(0,212,255,0.4)'; this.style.border='1px solid rgba(0,212,255,0.3)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none'; this.style.border='1px solid transparent'">
+    <div class="certificate-image" style="height: 160px; overflow: hidden; position: relative;">
+        <img src="media/delloit c_page-0001.jpg" alt="Technology Job Simulation" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease;">
+        <div class="certificate-overlay" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.6); display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.3s ease;">
+            <i class="fas fa-external-link-alt" style="color: #00d4ff; font-size: 24px;"></i>
+        </div>
+    </div>
+    <div class="certificate-content" style="padding: 20px;">
+        <h3 style="margin: 0 0 8px 0; font-size: 16px; font-weight: 600; color: #fff;">Technology Job Simulation</h3>
+        <p class="issuer" style="margin: 0; color: #888; font-size: 14px;">Deloitte • Jun 2025</p>
+        <div style="margin-top: 8px; color: #00d4ff; font-size: 12px; display: flex; align-items: center;">
+            <i class="fas fa-external-link-alt" style="margin-right: 4px;"></i>Click to view certificate
+        </div>
+    </div>
+</div>
+
+
+               <!-- Fundamental AI Concepts -->
+<div class="certificate-card" style="background: rgba(255, 255, 255, 0.05); border-radius: 12px; overflow: hidden; transition: all 0.3s ease; cursor: pointer; position: relative;" onclick="openCertificate('https://learn.microsoft.com/en-us/users/kuldipamreliya-4044/achievements/3yt6yfuh?ref=https%3A%2F%2Fwww.linkedin.com%2F')" onmouseover="this.style.transform='translateY(-8px)'; this.style.boxShadow='0 15px 35px rgba(0,212,255,0.4)'; this.style.border='1px solid rgba(0,212,255,0.3)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none'; this.style.border='1px solid transparent'">
+    <div class="certificate-image" style="height: 160px; overflow: hidden; position: relative;">
+        <img src="media/Fundamental AI.png" alt="Fundamental AI Concepts" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease;">
+        <div class="certificate-overlay" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.6); display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.3s ease;">
+            <i class="fas fa-external-link-alt" style="color: #00d4ff; font-size: 24px;"></i>
+        </div>
+    </div>
+    <div class="certificate-content" style="padding: 20px;">
+        <h3 style="margin: 0 0 8px 0; font-size: 16px; font-weight: 600; color: #fff;">Fundamental AI Concepts</h3>
+        <p class="issuer" style="margin: 0; color: #888; font-size: 14px;">Microsoft • Jul 2024</p>
+        <div style="margin-top: 8px; color: #00d4ff; font-size: 12px; display: flex; align-items: center;">
+            <i class="fas fa-external-link-alt" style="margin-right: 4px;"></i>Click to view certificate
+        </div>
+    </div>
+</div>
+
+<div class="certificate-card" style="background: rgba(255, 255, 255, 0.05); border-radius: 12px; overflow: hidden; transition: all 0.3s ease; cursor: pointer; position: relative;" onclick="openCertificate('https://drive.google.com/file/d/18PZFfcLHuCKO5K_3vCrAxFS-UVUbT7vr/view?usp=sharing')" onmouseover="this.style.transform='translateY(-8px)'; this.style.boxShadow='0 15px 35px rgba(0,212,255,0.4)'; this.style.border='1px solid rgba(0,212,255,0.3)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none'; this.style.border='1px solid transparent'">
+    <div class="certificate-image" style="height: 160px; overflow: hidden; position: relative;">
+        <img src="media/Microsoft Azure_page-0001.jpg" alt="Fundamental AI Concepts" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease;">
+        <div class="certificate-overlay" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.6); display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.3s ease;">
+            <i class="fas fa-external-link-alt" style="color: #00d4ff; font-size: 24px;"></i>
+        </div>
+    </div>
+    <div class="certificate-content" style="padding: 20px;">
+        <h3 style="margin: 0 0 8px 0; font-size: 16px; font-weight: 600; color: #fff;">Microsoft Azure Fundamentals</h3>
+        <p class="issuer" style="margin: 0; color: #888; font-size: 14px;">Microsoft</p>
+        <div style="margin-top: 8px; color: #00d4ff; font-size: 12px; display: flex; align-items: center;">
+            <i class="fas fa-external-link-alt" style="margin-right: 4px;"></i>Click to view certificate
+        </div>
+    </div>
+</div>
+
+<!-- Enterprise-grade AI -->
+<div class="certificate-card" style="background: rgba(255, 255, 255, 0.05); border-radius: 12px; overflow: hidden; transition: all 0.3s ease; cursor: pointer; position: relative;" onclick="openCertificate('https://www.credly.com/badges/76e08847-ca02-4051-97cf-34eddf93ec79')" onmouseover="this.style.transform='translateY(-8px)'; this.style.boxShadow='0 15px 35px rgba(0,212,255,0.4)'; this.style.border='1px solid rgba(0,212,255,0.3)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none'; this.style.border='1px solid transparent'">
+    <div class="certificate-image" style="height: 160px; overflow: hidden; position: relative;">
+        <img src="media/Enterprice grade AI.png" alt="Enterprise-grade AI" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease;">
+        <div class="certificate-overlay" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.6); display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.3s ease;">
+            <i class="fas fa-external-link-alt" style="color: #00d4ff; font-size: 24px;"></i>
+        </div>
+    </div>
+    <div class="certificate-content" style="padding: 20px;">
+        <h3 style="margin: 0 0 8px 0; font-size: 16px; font-weight: 600; color: #fff;">Enterprise-grade AI</h3>
+        <p class="issuer" style="margin: 0; color: #888; font-size: 14px;">IBM • Jul 2024</p>
+        <div style="margin-top: 8px; color: #00d4ff; font-size: 12px; display: flex; align-items: center;">
+            <i class="fas fa-external-link-alt" style="margin-right: 4px;"></i>Click to view certificate
+        </div>
+    </div>
+</div>
+
+<!-- AI, ML, Deep Learning, ABAP -->
+<div class="certificate-card" style="background: rgba(255, 255, 255, 0.05); border-radius: 12px; overflow: hidden; transition: all 0.3s ease; cursor: pointer; position: relative;" onclick="openCertificate('https://drive.google.com/file/d/1HVoZbaQLB42bd5dftOFW61g6KIvG9JXm/view?usp=sharing')" onmouseover="this.style.transform='translateY(-8px)'; this.style.boxShadow='0 15px 35px rgba(0,212,255,0.4)'; this.style.border='1px solid rgba(0,212,255,0.3)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none'; this.style.border='1px solid transparent'">
+    <div class="certificate-image" style="height: 160px; overflow: hidden; position: relative;">
+        <img src="media/Certificate_page-0001.jpg" alt="AI, ML, Deep Learning, ABAP" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease;">
+        <div class="certificate-overlay" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.6); display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.3s ease;">
+            <i class="fas fa-external-link-alt" style="color: #00d4ff; font-size: 24px;"></i>
+        </div>
+    </div>
+    <div class="certificate-content" style="padding: 20px;">
+        <h3 style="margin: 0 0 8px 0; font-size: 16px; font-weight: 600; color: #fff;">AI, ML, Deep Learning, ABAP</h3>
+        <p class="issuer" style="margin: 0; color: #888; font-size: 14px;">SAP • 2024</p>
+        <div style="margin-top: 8px; color: #00d4ff; font-size: 12px; display: flex; align-items: center;">
+            <i class="fas fa-external-link-alt" style="margin-right: 4px;"></i>Click to view certificate
+        </div>
+    </div>
+</div>
+
+        </section>
+
+        <!-- <section id="achievements" class="achievements" style="opacity: 1; transform: translateY(0); padding: 40px 5%;">
+            <h2 style="text-align: center; margin-bottom: 40px; font-size: 32px;">Achievements</h2>
+            <div style="max-width: 800px; margin: 0 auto;">
+                <ul class="achievement-list" style="list-style: none; padding: 0;">
+                    <li style="margin-bottom: 20px; padding-bottom: 20px; border-bottom: 1px solid rgba(255, 255, 255, 0.1);">
+                        <h4 style="margin: 0 0 8px 0; color: #00d4ff; font-size: 18px;">Oracle Java Foundation Certification</h4>
+                        <p style="margin: 0; color: #ccc; line-height: 1.6;">Earned Oracle's official Java Foundation certification, demonstrating solid understanding of Java programming fundamentals.</p>
+                    </li>
+                    <li style="margin-bottom: 20px; padding-bottom: 20px; border-bottom: 1px solid rgba(255, 255, 255, 0.1);">
+                        <h4 style="margin: 0 0 8px 0; color: #00d4ff; font-size: 18px;">Microsoft Global Hackathon 2023 Participant</h4>
+                        <p style="margin: 0; color: #ccc; line-height: 1.6;">Participated in Microsoft's prestigious global hackathon, showcasing problem-solving skills and innovation.</p>
+                    </li>
+                    <li style="margin-bottom: 20px; padding-bottom: 20px; border-bottom: 1px solid rgba(255, 255, 255, 0.1);">
+                        <h4 style="margin: 0 0 8px 0; color: #00d4ff; font-size: 18px;">AI & Machine Learning Expertise</h4>
+                        <p style="margin: 0; color: #ccc; line-height: 1.6;">Completed multiple AI/ML certifications from Microsoft, IBM, and SAP including Enterprise-grade AI training.</p>
+                    </li>
+                    <li style="margin-bottom: 20px; padding-bottom: 20px; border-bottom: 1px solid rgba(255, 255, 255, 0.1);">
+                        <h4 style="margin: 0 0 8px 0; color: #00d4ff; font-size: 18px;">HackerRank Problem Solving Expert</h4>
+                        <p style="margin: 0; color: #ccc; line-height: 1.6;">Achieved intermediate and basic level certifications in problem-solving, SQL, and CSS through HackerRank's rigorous testing platform.</p>
+                    </li>
+                    <li style="margin-bottom: 20px; padding-bottom: 20px; border-bottom: 1px solid rgba(255, 255, 255, 0.1);">
+                        <h4 style="margin: 0 0 8px 0; color: #00d4ff; font-size: 18px;">Java Development Specialist</h4>
+                        <p style="margin: 0; color: #ccc; line-height: 1.6;">Earned multiple Java-related certifications including Coding Ninjas badges and CodeChef assessments, demonstrating comprehensive Java programming skills.</p>
+                    </li>
+                    <li style="margin-bottom: 20px; padding-bottom: 20px;">
+                        <h4 style="margin: 0 0 8px 0; color: #00d4ff; font-size: 18px;">Professional Internship Experience</h4>
+                        <p style="margin: 0; color: #ccc; line-height: 1.6;">Successfully completed internships at SaiKet Systems and participated in Deloitte Australia's Technology Job Simulation program.</p>
+                    </li>
+                </ul>
+            </div>
+        </section> -->
+
+        
+
+
+        <section id="achievements" class="achievements" style="opacity: 1; transform: translateY(0); padding: 40px 5%;">
+            <h2 style="text-align: center; margin-bottom: 40px; font-size: 32px;">Achievements & Expertise</h2>
+            <div style="max-width: 800px; margin: 0 auto;">
+                <ul class="achievement-list" style="list-style: none; padding: 0;">
+        
+                    <li style="margin-bottom: 20px; padding-bottom: 20px; border-bottom: 1px solid rgba(255, 255, 255, 0.1);">
+                        <h4 style="margin: 0 0 8px 0; color: #00d4ff; font-size: 18px;">Oracle Java Foundation Certification</h4>
+                        <p style="margin: 0; color: #ccc; line-height: 1.6;">
+                            Earned Oracle's official Java Foundation certification, demonstrating strong grasp of core Java programming concepts.
+                        </p>
+                    </li>
+        
+                    <li style="margin-bottom: 20px; padding-bottom: 20px; border-bottom: 1px solid rgba(255, 255, 255, 0.1);">
+                        <h4 style="margin: 0 0 8px 0; color: #00d4ff; font-size: 18px;">AI & Machine Learning Expertise</h4>
+                        <p style="margin: 0; color: #ccc; line-height: 1.6;">
+                            Completed multiple AI/ML certifications from Microsoft, IBM, and SAP, including Enterprise-grade AI and Azure Fundamentals training.
+                        </p>
+                    </li>
+        
+                    <li style="margin-bottom: 20px; padding-bottom: 20px; border-bottom: 1px solid rgba(255, 255, 255, 0.1);">
+                        <h4 style="margin: 0 0 8px 0; color: #00d4ff; font-size: 18px;">Java Development & Problem Solving</h4>
+                        <p style="margin: 0; color: #ccc; line-height: 1.6;">
+                            Achieved multiple Java certifications from Coding Ninjas and CodeChef, and earned a <strong>5-star rating in Java on HackerRank</strong>, showcasing industry-level coding and problem-solving skills.
+                        </p>
+                    </li>
+        
+                    <li style="margin-bottom: 20px; padding-bottom: 20px; border-bottom: 1px solid rgba(255, 255, 255, 0.1);">
+                        <h4 style="margin: 0 0 8px 0; color: #00d4ff; font-size: 18px;">Competitive Programming</h4>
+                        <p style="margin: 0; color: #ccc; line-height: 1.6;">
+                            Solved <strong>350+ problems on LeetCode</strong> and reached <strong>Expert level on Codeforces (1500+ rating)</strong>, demonstrating strong algorithmic thinking and coding proficiency.
+                        </p>
+                    </li>
+        
+                    <li style="margin-bottom: 20px; padding-bottom: 20px;">
+                        <h4 style="margin: 0 0 8px 0; color: #00d4ff; font-size: 18px;">Professional Internship Experience</h4>
+                        <p style="margin: 0; color: #ccc; line-height: 1.6;">
+                            Completed Java-focused internships at SaiKet Systems and participated in Deloitte Australia's Technology Job Simulation, gaining practical industry experience.
+                        </p>
+                    </li>
+        
+                </ul>
+            </div>
+        </section>
+        
+        
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Kuldip Amreliya. All rights reserved.</p>
+    </footer>
+
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+    
+    <script>
+        // Generate stars background for certificates page
+        document.addEventListener('DOMContentLoaded', function() {
+            const starsContainer = document.getElementById('stars');
+            const numStars = 100;
+            
+            for (let i = 0; i < numStars; i++) {
+                const star = document.createElement('div');
+                star.className = 'star';
+                
+                // Random position
+                star.style.left = Math.random() * 100 + '%';
+                star.style.top = Math.random() * 100 + '%';
+                
+                // Random size (1-3px)
+                const size = Math.random() * 2 + 1;
+                star.style.width = size + 'px';
+                star.style.height = size + 'px';
+                
+                // Random animation duration (2-5s)
+                const duration = Math.random() * 3 + 2;
+                star.style.setProperty('--duration', duration + 's');
+                
+                starsContainer.appendChild(star);
+            }
+
+            // Add hover effects for certificate cards
+            const certificateCards = document.querySelectorAll('.certificate-card');
+            certificateCards.forEach(card => {
+                const overlay = card.querySelector('.certificate-overlay');
+                const img = card.querySelector('.certificate-image img');
+                
+                card.addEventListener('mouseenter', function() {
+                    if (overlay) overlay.style.opacity = '1';
+                    if (img) img.style.transform = 'scale(1.05)';
+                });
+                
+                card.addEventListener('mouseleave', function() {
+                    if (overlay) overlay.style.opacity = '0';
+                    if (img) img.style.transform = 'scale(1)';
+                });
+            });
+        });
+
+        // Function to open certificate links
+        function openCertificate(url) {
+            if (url && url !== 'https://example.com/') {
+                window.open(url, '_blank', 'noopener,noreferrer');
+            } else {
+                alert('Certificate link will be added soon! Please contact me for the original certificate.');
+            }
+        }
+    </script>
+</body>
+</html>

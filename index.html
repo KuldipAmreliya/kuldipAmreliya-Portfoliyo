@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kuldip Amreliya - Java Developer Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+    <style>
+	/* Mobile font size only */
+	@media (max-width: 480px) {
+		.hero .name { font-size: 28px; }
+	}
+	@media (max-width: 360px) {
+		.hero .name { font-size: 24px; }
+	}
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <div class="logo-container">
+                <div class="logo">AK</div>
+                <div class="name-title">
+                    <!-- <h1 class="header-name">Kuldip Amreliya</h1>
+                    <span class="title">Java Developer</span> -->
+                </div>
+            </div>
+            <nav class="navbar">
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#dsa-skills">DSA Skills</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="certificates.html">Certificates</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="name-container">
+                <h1 class="name">Kuldip Amreliya</h1>
+                <div class="name-underline"></div>
+            </div>
+            <div class="role-container">
+                <div class="typing-container">
+                    <span class="static-text">System.out.println(</span>
+                    <span class="typing-text"></span>
+                    <span class="static-text">);</span>
+                </div>
+                <p class="tagline">Passionate about creating robust and scalable applications</p>
+            </div>
+            <div class="cta-buttons">
+                <a href="#" class="glow-button">Download Resume</a>
+                <a href="#projects" class="glow-button">View Projects</a>
+            </div>
+        </div>
+        <div id="scene-container"></div>
+    </section>
+
+    <section id="terminal" class="terminal-section">
+        <div class="terminal-container">
+            <div class="terminal-header">
+                <div class="terminal-buttons">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="terminal-title">Java Terminal</div>
+            </div>
+            <div class="terminal-body">
+                <div class="terminal-output">
+                    <!-- <div class="line">Welcome to Java Terminal v1.0</div>
+                    <div class="line">Type 'help' for available commands</div> -->
+                </div>
+                <div class="terminal-input-line">
+                    <span class="prompt">$</span>
+                    <input type="text" class="terminal-input" autofocus>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="dsa-skills" class="dsa-skills">
+        <h2>Data Structures & Algorithms</h2>
+        <div class="dsa-content">
+            <p class="dsa-intro">Passionate about problem-solving and competitive programming with strong DSA fundamentals</p>
+            <div class="dsa-platforms">
+                <div class="dsa-card">
+                    <div class="dsa-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>LeetCode</h3>
+                    <div class="dsa-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">350+</span>
+                            <span class="stat-label">Problems Solved</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">Java</span>
+                            <span class="stat-label">Primary Language</span>
+                        </div>
+                    </div>
+                    <a href="https://leetcode.com/u/kuldipamreliya001/" target="_blank" class="dsa-link">
+                        <i class="fas fa-external-link-alt"></i> View Profile
+                    </a>
+                </div>
+
+                <div class="dsa-card">
+                    <div class="dsa-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h3>Codeforces</h3>
+                    <div class="dsa-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">1500+</span>
+                            <span class="stat-label">Rating</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">Expert</span>
+                            <span class="stat-label">Level</span>
+                        </div>
+                    </div>
+                    <a href="https://codeforces.com/profile/kuldipamreliya001" target="_blank" class="dsa-link">
+                        <i class="fas fa-external-link-alt"></i> View Profile
+                    </a>
+                </div>
+
+                <div class="dsa-card">
+                    <div class="dsa-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>HackerRank</h3>
+                    <div class="dsa-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">5★</span>
+                            <span class="stat-label">Java Rating</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">Java</span>
+                            <span class="stat-label">Expert Level</span>
+                        </div>
+                    </div>
+                    <a href="https://www.hackerrank.com/profile/Amreliya_Kuldip" target="_blank" class="dsa-link">
+                        <i class="fas fa-external-link-alt"></i> View Profile
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="tech-stack" class="tech-stack">
+        <h2>Tech Stack</h2>
+        <div class="tech-grid">
+            <!-- Core Technologies -->
+            <div class="tech-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" />
+                <span>Java</span>
+            </div>
+            <div class="tech-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" alt="Spring Boot" />
+                <span>Spring Boot</span>
+            </div>
+            <div class="tech-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original-wordmark.svg" alt="Spring Tool Suite" />
+                <span>Spring Tool Suite</span>
+            </div>
+            <div class="tech-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" alt="Spring Security" />
+                <span>Spring Security</span>
+            </div>
+            
+            <!-- Database Technologies -->
+            <div class="tech-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" />
+                <span>MySQL</span>
+            </div>
+            <div class="tech-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB" />
+                <span>MongoDB</span>
+            </div>
+            <div class="tech-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/hibernate/hibernate-original.svg" alt="Hibernate" />
+                <span>Hibernate</span>
+            </div>
+
+            <!-- Testing & Tools -->
+            <div class="tech-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/junit/junit-original.svg" alt="JUnit" />
+                <span>JUnit</span>
+            </div>
+            <div class="tech-item">
+                <img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" alt="Postman" />
+                <span>Postman</span>
+            </div>
+            
+
+            <!-- Build Tools & Templates -->
+            <div class="tech-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/maven/maven-original.svg" alt="Maven" />
+                <span>Maven</span>
+            </div>
+            <div class="tech-item">
+                <img src="https://www.thymeleaf.org/images/thymeleaf.png" alt="Thymeleaf" />
+                <span>Thymeleaf</span>
+            </div>
+
+            <!-- Version Control -->
+            <div class="tech-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" />
+                <span>Git</span>
+            </div>
+            <div class="tech-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" />
+                <span>GitHub</span>
+            </div>
+
+            <!-- IDEs -->
+            <div class="tech-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/intellij/intellij-original.svg" alt="IntelliJ" />
+                <span>IntelliJ</span>
+            </div>
+            <div class="tech-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/eclipse/eclipse-original.svg" alt="Eclipse" />
+                <span>Eclipse</span>
+            </div>
+
+            <!-- Additional Languages -->
+            <div class="tech-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" />
+                <span>JavaScript</span>
+            </div>
+            <div class="tech-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" />
+                <span>Python</span>
+            </div>
+            <div class="tech-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C" />
+                <span>C</span>
+            </div>
+
+            <!-- Web Technologies -->
+            <div class="tech-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" />
+                <span>HTML5</span>
+            </div>
+            <div class="tech-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" />
+                <span>CSS3</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <div class="about-content">
+       <p>Hi, I'm Kuldip Amreliya, a passionate and detail-oriented Computer Engineering graduate from Pacific School of Engineering, affiliated with Gujarat Technological University (Batch of 2025, CGPA: 9/10). With a strong academic foundation and a deep interest in software development, I'm eager to begin my journey in the tech industry and contribute to impactful projects.<br><br>
+      <p>  I have a solid grounding in Java, Spring Boot, and web technologies, and I'm constantly expanding my skills in backend development and scalable system design. I completed my 10th and 12th with 79.33% and 76% respectively and am currently based in Surat, Gujarat. I'm open to relocation and ready to join immediately.</p><br>
+        
+        <p>I'm seeking an opportunity in a reputed organization where I can learn, grow, and make meaningful contributions as a fresher.</p></p> </div>
+    </section>
+
+    <section class="skills" id="skills">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-card" data-level="95">
+                <h3>Java</h3>
+                <div class="skill-bar">
+                    <div class="skill-progress"></div>
+                </div>
+            </div>
+            <div class="skill-card" data-level="90">
+                <h3>Spring Boot</h3>
+                <div class="skill-bar">
+                    <div class="skill-progress"></div>
+                </div>
+            </div>
+            <div class="skill-card" data-level="85">
+                <h3>SQL</h3>
+                <div class="skill-bar">
+                    <div class="skill-progress"></div>
+                </div>
+            </div>
+            <div class="skill-card" data-level="80">
+                <h3>Git</h3>
+                <div class="skill-bar">
+                    <div class="skill-progress"></div>
+                </div>
+            </div>
+            <div class="skill-card" data-level="88">
+                <h3>REST APIs</h3>
+                <div class="skill-bar">
+                    <div class="skill-progress"></div>
+                </div>
+            </div>
+            <div class="skill-card" data-level="75">
+                <h3>Maven</h3>
+                <div class="skill-bar">
+                    <div class="skill-progress"></div>
+                </div>
+            </div>
+            <div class="skill-card" data-level="75">
+                <h3>HTML,CSS</h3>
+                <div class="skill-bar">
+                    <div class="skill-progress"></div>
+                </div>
+            </div>
+            <div class="skill-card" data-level="75">
+                <h3>JavaScript</h3>
+                <div class="skill-bar">
+                    <div class="skill-progress"></div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="education" class="education">
+        <h2>Education</h2>
+        <div class="education-item">
+            <h3>Pacific School of Engineering</h3>
+            <h4>Bachelor of Engineering (B.E.) in Computer Engineering</h4>
+            <p class="education-details">Gujarat Technological University, Batch of 2025</p>
+            <p class="education-details">CGPA: 9/10</p>
+        </div>
+        <div class="education-item">
+            <h3>H.S.C. (12th Grade)</h3>
+            <h4>Science Stream</h4>
+            <p class="education-details">Percentage: 76%</p>
+            <p class="education-details">Year: 2021</p>
+        </div>
+        <div class="education-item">
+            <h3>S.S.C. (10th Grade)</h3>
+            <h4>General Stream</h4>
+            <p class="education-details">Percentage: 79.33%</p>
+            <p class="education-details">Year: 2019</p>
+        </div>
+    </section>
+
+    <section id="experience" class="experience">
+        <h2>Experience</h2>
+        <div class="experience-timeline">
+            <div class="experience-item">
+                <div class="experience-date">
+                    <span class="date">Feb 2025 – Apr 2025</span>
+                </div>
+                <div class="experience-content">
+                    <h3>Java Developer Intern</h3>
+                    <h4>Fransa Consultancy</h4>
+                    <ul class="experience-details">
+                        <li>Worked on backend modules using Java and Spring Boot for enterprise applications.</li>
+                        <li>Contributed to the development and optimization of RESTful APIs and database integration using MySQL.</li>
+                        <li>Implemented logging with SLF4J and wrote unit tests using JUnit.</li>
+                        <li>Collaborated in an Agile team to enhance application performance and scalability.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="experience-item">
+                <div class="experience-date">
+                    <span class="date">Jun 2024 – Jul 2024</span>
+                </div>
+                <div class="experience-content">
+                    <h3>Java Development Intern</h3>
+                    <h4>SaiKet Systems</h4>
+                    <ul class="experience-details">
+                         <li>Developed Java-based modules and actively contributed to software development tasks.</li>
+                        <li>Demonstrated strong Java fundamentals, attention to detail, and effective communication.</li>
+                        <li>Successfully completed assigned tasks and showcased the ability to adapt and learn quickly.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="experience-item">
+                <div class="experience-date">
+                    <span class="date">Jul 2024 – Aug 2024</span>
+                </div>
+                <div class="experience-content">
+                    <h3>Intern – AI & Cloud Technologies</h3>
+                    <h4>Edunet Foundation (in collaboration with IBM & AICTE)</h4>
+                    <ul class="experience-details">
+                        <li>Completed a 4-week internship focused on emerging technologies like AI and Cloud using IBM SkillsBuild.</li>
+                        <li>Gained hands-on experience with cloud platforms, data handling, and foundational AI concepts.</li>
+                        <li>Built prototypes and participated in group learning activities to enhance real-world understanding.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <h2>Projects</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="media/Screenshot 2025-10-26 185149.png" alt="JournalHub - Journal Management App">
+                </div>
+                <h3>JournalHub</h3>
+                <p class="project-description">
+                    Secure journal management app with authentication, CRUD, and cloud storage.
+                </p>
+                <div class="project-tech-stack">
+                    <span>Spring Boot</span>
+                    <span>MongoDB</span>
+                    <span>Spring Security</span>
+                    <span>Thymeleaf</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/KuldipAmreliya/JournalHub" target="_blank" class="github-link">
+                        <i class="fab fa-github"></i> Code
+                    </a>
+                    <!-- <a href="#" target="_blank" class="live-link">
+                        <i class="fas fa-external-link-alt"></i> Live
+                    </a> -->
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="media/Screenshot 2025-10-26 185449.png" alt="4U Beauty Parlour - Beauty Salon Website">
+                </div>
+                <h3>4U Beauty Parlour</h3>
+                <p class="project-description">
+                    Responsive business website with services, contact form, and location.
+                </p>
+                <div class="project-tech-stack">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/KuldipAmreliya/4uBeautyParlour" target="_blank" class="github-link">
+                        <i class="fab fa-github"></i> Code
+                    </a>
+                    <a href="https://kuldipamreliya.github.io/4uBeautyParlour/" target="_blank" class="live-link">
+                        <i class="fas fa-external-link-alt"></i> Live
+                    </a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="media/bank img.jpg" alt="Banking Application - Core Java Console App">
+                </div>
+                <h3>Banking Application – Core Java</h3>
+                <p class="project-description">
+                    Console-based banking operations built with Core Java (OOP, collections, file I/O).
+                </p>
+                <div class="project-tech-stack">
+                    <span>Core Java</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/KuldipAmreliya/Banking-System-In-java" target="_blank" class="github-link"><i class="fab fa-github"></i> Code</a>
+                    <!-- <a href="#" target="_blank" class="live-link"><i class="fas fa-external-link-alt"></i> Live</a> -->
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="media/Screenshot 2025-10-27 135102.png" alt="InfoPay - Government Scheme Portal">
+                </div>
+                <h3>InfoPay – Government Scheme Portal</h3>
+                <p class="project-description">
+                    Informational portal to explore government schemes with clean UI and search.
+                </p>
+                <div class="project-tech-stack">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/KuldipAmreliya/InfOPAY" target="_blank" class="github-link"><i class="fab fa-github"></i> Code</a>
+                    <a href="https://kuldipamreliya.github.io/InfOPAY/" target="_blank" class="live-link"><i class="fas fa-external-link-alt"></i> Live</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="media/Screenshot 2025-10-27 135406.png" alt="GrowMore - Jewelry Design Institute">
+                </div>
+                <h3>GrowMore – Jewelry Design Institute Website</h3>
+                <p class="project-description">
+                    Responsive institute website presenting courses, gallery, and contact.
+                </p>
+                <div class="project-tech-stack">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/KuldipAmreliya/GrowMore" target="_blank" class="github-link"><i class="fab fa-github"></i> Code</a>
+                    <a href="https://kuldipamreliya.github.io/GrowMore/" target="_blank" class="live-link"><i class="fas fa-external-link-alt"></i> Live</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="media/Screenshot 2025-10-27 170707.png" alt="BuyProductBazar - Waste Management Marketplace">
+                </div>
+                <h3>ByProductBazar – Waste Management Marketplace with Chatbot</h3>
+                <p class="project-description">
+                    Marketplace to buy/sell recyclables with integrated chatbot for assistance.
+                </p>
+                <div class="project-tech-stack">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                    <span>Chatbot API</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/KuldipAmreliya/byProductBazar" target="_blank" class="github-link"><i class="fab fa-github"></i> Code</a>
+                    <a href="https://kuldipamreliya.github.io/byProductBazar/" target="_blank" class="live-link"><i class="fas fa-external-link-alt"></i> Live</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Get In Touch</h2>
+        <div class="contact-content">
+            <div class="contact-info">
+                <p>Have a question or want to collaborate? Feel free to reach out!</p>
+                <div class="contact-details">
+                    <p><i class="fas fa-envelope"></i> kuldipamreliya001@gmail.com</p>
+                    <p><i class="fas fa-phone"></i> +91 86903 39086</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Surat, Gujarat, India</p>
+                </div>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/amreliyakuldip/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/KuldipAmreliya" target="_blank"><i class="fab fa-github"></i></a>
+                    <!-- Add more social links as needed -->
+                </div>
+            </div>
+            <div class="contact-form">
+                <form id="contactForm" onsubmit="return handleSubmit(event)">
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="glow-button">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Kuldip Amreliya. All rights reserved.</p>
+    </footer>
+
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html> 
